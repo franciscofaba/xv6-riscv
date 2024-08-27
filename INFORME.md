@@ -8,3 +8,4 @@
 -Mi principal problema fue darme cuenta de cuál era la instalación que realmente debía realizar. Una vez que comprendí que Kali está basado en Debian, fue mucho más fácil lograrlo.
 
 
+![image](https://github.com/user-attachments/assets/ca932af7-24fe-4d3c-b9e7-f3c463a71f8b)
