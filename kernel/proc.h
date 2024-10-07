@@ -95,6 +95,10 @@ struct proc {
   // wait_lock must be held when using this:
   struct proc *parent;         // Parent process
 
+  // New fields for priority scheduling
+  int priority;   // Process priority (0 = highest priority)
+  int boost;      // Boost for dynamic adjustment (1 or -1)
+
   // these are private to the process, so p->lock need not be held.
   uint64 kstack;               // Virtual address of kernel stack
   uint64 sz;                   // Size of process memory (bytes)

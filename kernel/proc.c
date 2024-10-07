@@ -125,6 +125,10 @@ found:
   p->pid = allocpid();
   p->state = USED;
 
+  // Inicialización de prioridad y boost
+  p->priority = 0;  // Prioridad inicial
+  p->boost = 1;     // Boost inicial
+
   // Allocate a trapframe page.
   if((p->trapframe = (struct trapframe *)kalloc()) == 0){
     freeproc(p);
