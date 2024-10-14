@@ -245,6 +245,31 @@ Para solucionarlo, cambié el nombre del archivo a `pprocess.c`, ya que el anter
   ```
 ## 7. Solucion del error:
   Al comentar el problema con mis compañeros, me di cuenta de que ellos también se enfrentaron a situaciones similares. El inconveniente radica en que, aunque se aplica la lógica de prioridad, esta se ejecuta de manera independiente en cada CPU, y por defecto, xv6 utiliza tres CPUs. Al reducir la cantidad de CPUs a una, el programa logra imprimir los strings en el orden esperado ya que la logica esta bien. Sin embargo, es importante destacar que esta no es la solución óptima, ya que lo ideal sería que funcionara correctamente con las tres CPUs.
+  Tambien debo destacar que para llegar a esta conclusion realice la tarea 3 veces de maneras distintas y sin llegar nada por lo que no realice commits.
+```
+init: starting sh
+$ pprocess
+Proceso 0 ejecutado
+Proceso 1 ejecutado
+Proceso 2 ejecutado
+Proceso 3 ejecutado
+Proceso 4 ejecutado
+Proceso 5 ejecutado
+Proceso 6 ejecutado
+Proceso 7 ejecutado
+Proceso 8 ejecutado
+Proceso 9 ejecutado
+Proceso 10 ejecutado
+Proceso 11 ejecutado
+Proceso 12 ejecutado
+Proceso 13 ejecutado
+Proceso 14 ejecutado
+Proceso 15 ejecutado
+Proceso 16 ejecutado
+Proceso 17 ejecutado
+Proceso 18 ejecutado
+Proceso 19 ejecutado
+```
 
 
  
